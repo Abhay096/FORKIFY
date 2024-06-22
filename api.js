@@ -118,7 +118,7 @@ function display(num) {
             for (i = 0; i < second_data.data.recipe.ingredients.length; i++) {
                 if (i % 2 == 0) {
                     if (second_data.data.recipe.ingredients[i].quantity != null) {
-                        let ingr_div = `<div style="font-size:1.1em; height: 50px;"> <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/FD7E14/checkmark--v1.png" alt="checkmark--v1"/><span>${(1 / second_data.data.recipe.ingredients[i].quantity * initial_num).toFixed(1)}</span> ${second_data.data.recipe.ingredients[i].unit} ${second_data.data.recipe.ingredients[i].description}</div>`
+                        let ingr_div = `<div style="font-size:1.1em; height: 50px; margin-bottom: 1.2rem"> <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/FD7E14/checkmark--v1.png" alt="checkmark--v1"/><span>${(1 / second_data.data.recipe.ingredients[i].quantity * initial_num).toFixed(1)}</span> ${second_data.data.recipe.ingredients[i].unit} ${second_data.data.recipe.ingredients[i].description}</div>`
                         div1.innerHTML += ingr_div;
                         let t_height = tooling.clientHeight;
                         let d_height = display_dom.clientHeight;
@@ -130,7 +130,7 @@ function display(num) {
 
                     }
                     else {
-                        let ingr_div = `<div style="font-size:1.1em; height: 50px;"> <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/FD7E14/checkmark--v1.png" alt="checkmark--v1"/> ${second_data.data.recipe.ingredients[i].unit} ${second_data.data.recipe.ingredients[i].description}</div>`
+                        let ingr_div = `<div style="font-size:1.1em; height: 50px; margin-bottom: 1.2rem"> <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/FD7E14/checkmark--v1.png" alt="checkmark--v1"/> ${second_data.data.recipe.ingredients[i].unit} ${second_data.data.recipe.ingredients[i].description}</div>`
                         div1.innerHTML += ingr_div;
                         let t_height = tooling.clientHeight;
                         let d_height = display_dom.clientHeight;

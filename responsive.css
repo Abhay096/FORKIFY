@@ -60,3 +60,32 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 453px) {
+    #main_div {
+        margin: 50px 40px 35px 40px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    #search_bar input {
+
+        width: 240px;
+
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    #div1,
+    #div2 {
+        width: auto;
+        padding-bottom: 0px;
+    }
+
+    #title {
+        font-size: 1.3rem;
+        width: 16rem;
+    }
+}

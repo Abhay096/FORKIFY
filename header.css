@@ -46,9 +46,9 @@ body {
     cursor: pointer;
 }
 
-#search_button:hover {
+/* #search_button:hover {
     padding: 13px 31px 14px 31px;
-}
+} */
 
 #add_recepie button {
     display: flex;
